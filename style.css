@@ -1,0 +1,250 @@
+/*Kevin Gao*/
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+nav{
+  font-weight: bold;
+  color: gray;
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top:0px;
+  display:flex;
+  list-style: none;
+  padding-left: 100px;
+}
+
+a{
+  display: none;
+}
+
+li{
+  margin: 15px;
+  padding-bottom: 30px;
+}
+
+li:hover {
+  color: #4AB3F4;
+  border-bottom: 2px solid;
+}
+
+#header{
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  height: 46px;
+  z-index: 100;
+}
+
+#twitterlogo{
+  position:fixed;
+  left: 50%;
+  width: 30px;
+  margin: 15px;
+}
+
+#TweetButton {
+  position:fixed;
+  right:0%;
+  margin-top: 8px;
+  margin-right: 20px;
+  background-color:#4AB3F4;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 24px;
+  z-index: 100;
+}
+
+#wrapper {
+  background-color: e6ecf0;
+  display:flex;
+  margin-top: 100px;
+  max-width: 1190px;
+  margin: 56px auto;
+}
+
+#content-left {
+  height:250px;
+  width: 290px;
+  position:fixed;
+  display: flex;
+  align-items: flex end;
+}
+
+#coverpic{
+  margin-top: 0px;
+  padding-top: 30px;
+  padding-bottom: 65px;
+  padding-left: 65px;
+  padding-right: 65px;
+  width: 160px;
+  background-color:black;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#profilepic{
+  margin-top: -30px;
+  margin-left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: fixed;
+  z-index: 100;
+}
+
+#profilepicdiv{
+  background-color: white;
+  margin-top: 100px;
+  width:290px;
+  height: 150px;
+  position: fixed;
+  z-index: 100;
+}
+
+#profilename{
+  margin-left: 120px;
+  margin-top: 0px;
+  line-height: 3px;
+}
+
+#profilestats{
+  background-color: white;
+  width:290px;
+  height: 50px;
+  margin-top: 180px;
+  z-index: 100;
+}
+
+#profiletweets{
+  margin-left: 20px;
+  margin-top: -20px;
+  width: 90px;
+}
+
+#profilefollowing{
+  margin-left: 100px;
+  margin-top: -68px;
+  width: 90px;
+}
+#profilefollowers{
+  margin-left: 200px;
+  margin-top: -68px;
+  width: 90px;
+}
+
+#content-center{
+  width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  margin-left: 300px;
+}
+
+#tweetprofilepic{
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: fixed;
+  z-index: 100;
+}
+
+.tweet{
+  width: 600px;
+  /*padding-top: 50px;*/
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 51px; /*take out if wanting better center*/
+}
+
+.tweetheader{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.tweetbody{
+  margin-top: -10px;
+  margin-left: 70px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+#content-right {
+  height:270px;
+  width: 290px;
+  background-color: white;
+  margin-left: 910px;
+  position: fixed;
+  display: flex;
+  align-items: flex end;
+  flex-direction: column;
+}
+
+#contentrightheader{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-size:x-large;
+}
+
+.FollowSuggestion{
+  padding-top: 30px;
+  padding-bottom: 75px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+#tweetprofilepicright{
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: fixed;
+  z-index: 100;
+}
+
+.FollowSuggestionHeader{
+  position: fixed;
+  margin-left: 80px;
+}
+
+.followbutton{
+  position: fixed;
+  margin-top: 30px;
+  margin-left: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position:fixed;
+  background-color:white;
+  text-align: center;
+  color: #4AB3F4;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 24px;
+  border-color: #4AB3F4;
+  border: 1px solid;
+  z-index: 100;
+}
+
+@media (max-width: 1200px){
+  #content-right{
+    display:none;
+  }
+}

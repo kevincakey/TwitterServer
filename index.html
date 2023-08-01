@@ -1,0 +1,106 @@
+<!-- Kevin Gao -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- TODO: Create HTML elements for Twitter mockup inside body -->
+    <nav id="header" role="navigation">
+      <li class="fas fa-home">Home</li>
+      <li class="fas fa-hashtag">Moments</li>
+      <li class="far fa-bell">Notifications</li>
+      <li class="far fa-envelope">Messages</li>
+      <a href="#content-center">Jump to Tweets</a>
+      <img
+        id="twitterlogo"
+        src="images/twitter-logo.png"
+        alt="image of the twitter logo"
+      />
+      <li id="TweetButton">Tweet</li>
+    </nav>
+
+    <div id="wrapper">
+      <div id="content-left">
+        <div id="coverpicdiv">
+          <img
+            id="coverpic"
+            src="images/ratatouille-banner.png"
+            alt="image banner of word Ratatouille"
+          />
+        </div>
+        <div id="profilepicdiv">
+          <img
+            id="profilepic"
+            src="images/ratatouille.jpg"
+            alt="profile picture of cartoon remy from Ratatouille"
+          />
+          <div id="profilename">
+            <p>
+              <b><u>Remy</u></b>
+            </p>
+            <p style="color: gray">@remy</p>
+          </div>
+        </div>
+        <div id="profilestats">
+          <div id="profiletweets">
+            <p><b style="color: gray">Tweets</b></p>
+            <b style="color: #4ab3f4">5049</b>
+          </div>
+          <div id="profilefollowing">
+            <p><b style="color: gray">Following</b></p>
+            <b style="color: #4ab3f4">324</b>
+          </div>
+          <div id="profilefollowers">
+            <p><b style="color: gray">Followers</b></p>
+            <b style="color: #4ab3f4">809</b>
+          </div>
+        </div>
+      </div>
+      <div id="content-center" role="main">
+        <input id="searchBar" type="search" placeholder="Search in tweets" />
+        <input id="feedRefresh" type="checkbox" />
+        <div id="test"></div>
+        <div class="tweet">
+          <img
+            id="tweetprofilepic"
+            src="images/ratatouille.jpg"
+            alt="profile picture of cartoon remy from Ratatouille"
+          />
+          <div class="tweetheader">
+            <p style="color: gray">
+              <b style="color: black">Remy</b> @remy Nov 19
+            </p>
+          </div>
+          <div class="tweetbody">
+            I'm taking this class called CS 110 and the TAs are all so
+            <span style="font-weight: bold">cool</span>!
+          </div>
+        </div>
+      </div>
+      <div id="content-right">
+        <div id="contentrightheader"><b>Who to Follow</b></div>
+        <div class="FollowSuggestion">
+          <img
+            id="tweetprofilepicright"
+            src="images/linguini.png"
+            alt="profile picture of cartoon Linguini from Ratatouille"
+          />
+          <div class="FollowSuggestionHeader"><b>Linguini</b> @linguini</div>
+          <div class="followbutton"><b>Follow</b></div>
+        </div>
+        <div class="FollowSuggestion">
+          <img
+            id="tweetprofilepicright"
+            src="images/ratatouille.jpg"
+            alt="profile picture of cartoon remy from Ratatouille"
+          />
+          <div class="FollowSuggestionHeader"><b>CS110 TA</b> @cs</div>
+          <div class="followbutton"><b>Follow</b></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
